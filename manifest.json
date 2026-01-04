@@ -1,0 +1,9 @@
+{
+  "name": "מזמור לתודה - ספירת ימים",
+  "short_name": "מזמור לתודה",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "icons": []
+}
