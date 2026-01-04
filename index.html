@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מזמור לתודה - ספירת ימים</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div id="dateBar" class="date-bar"></div>
+
+<div class="container">
+
+    <h1>מזמור לתודה</h1>
+
+    <div class="psalm-box">
+        <p>
+            מִזְמוֹר לְתוֹדָה. הָרִיעוּ לַיהוָה כָּל הָאָרֶץ. 
+            עִבְדוּ אֶת־יְהוָה בְּשִׂמְחָה בֹּאוּ לְפָנָיו 
+            בִּרְנָנָה. דְּעוּ כִּי יְהוָה הוּא אֱלֹהִים הוּא 
+            עָשָׂנוּ וְלוֹ אֲנַחְנוּ עַמּוֹ וְצֹאן מַרְעִיתוֹ. 
+            בֹּאוּ שְׁעָרָיו בְּתוֹדָה חֲצֵרוֹתָיו בִּתְהִלָּה 
+            הוֹדוּ לוֹ בָּרְכוּ שְׁמוֹ. כִּי־טוֹב יְהוָה לְעוֹלָם 
+            חַסְדּוֹ וְעַד־דֹּר וָדֹר אֱמוּנָתוֹ.
+        </p>
+    </div>
+
+    <div class="box">
+        <label>בחר תאריך התחלה:</label>
+        <input type="date" id="startDate">
+        <button id="saveStart">שמור תאריך</button>
+    </div>
+
+    <div class="box">
+        <p>ימים רצופים: <span id="streak">0</span></p>
+        <button id="markToday">סימנתי שקראתי היום</button>
+    </div>
+
+    <div class="box">
+        <label>הגדר שעה להתראה:</label>
+        <input type="time" id="notifyTime">
+        <button id="saveNotify">שמור שעה</button>
+    </div>
+
+    <button id="reset" class="danger">איפוס ספירה</button>
+</div>
+
+<!-- חלון אישור -->
+<div id="confirmBox" class="confirm hidden">
+    <div class="confirm-window">
+        <p>בטוח שאתה רוצה לאפס?</p>
+        <button id="yesReset">כן</button>
+        <button id="noReset">לא</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
